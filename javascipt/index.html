@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.myclass{
+    color:greenyellow
+}
+</style>
+</head>
+<body>
+    <h2 id="myId">This is an element with Id</h2>
+    <p class="myclass">Paragragh 1 with class 'myclass'</p>
+    <p class="myclass">Paragragh 2 with class 'myclass'</p>
+    <div class="myclass">Div with class 'myclass'</div>
+    <div>Just a div</div>
+<script>
+    //1.Get Element by ID
+    const s=document.getElementById('myId')
+    s.style.color='blue'
+    console.log(s);
+
+    //2.Get element by classname
+    const c=document.getElementsByClassName('myclass')
+    for(let i;i=c.length;i++)
+    {
+        c[i].style.font = 'bold'
+    }
+    cosole.log(c)
+
+    //3.Get Elements by tag name div
+    const d=document.getElementsByTagName('div')
+    for(let i=0;i<d.length;i++){
+    d[i].style.border = '2px solid red';
+    }
+    console.log(d);
+
+    //4. query selector
+    const query
+
+</script>
+</body>
+</html>
